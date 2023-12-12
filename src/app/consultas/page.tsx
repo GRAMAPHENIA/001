@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from "next/link"
 
 export const metadata = {
-    title: 'Consultas',
+    title: 'CONSULTAS',
   }
 
 export default function Consultas() {
