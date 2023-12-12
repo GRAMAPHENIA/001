@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --dark: #2b3035;
-  --button-dark: #363c42;
+  --dark: #161b22;
   --light: #dee8f1;
+  --button-dark: #363c42;
   --button-light: #dee8f1;
   --hover: #456779;
-  --estado: #5c7481;
-  --card-dark: #2b343c;
+  --estado: #1b2430;
+  --card-dark: #0d1117;
   --card-light: #36393b;
 }
 

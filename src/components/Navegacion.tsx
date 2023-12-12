@@ -23,9 +23,10 @@ export default function Navegacion() {
             key={link.name}
             href={link.href}
             className={clsx(
-              "flex items-center justify-center gap-4 mb-2 rounded-md bg-[var(--button-dark)] p-3 text-sm font-medium hover:bg-[var(--hover)] hover:text-slate-400 md:flex-none md:justify-start md:p-2 md:px-3",
+              "flex items-center justify-center gap-4 mb-2 rounded-md bg-[var(--button-dark)] p-3 text-sm font-medium hover:bg-[var(--estado)] hover:text-slate-400 md:flex-none md:justify-start md:p-2 md:px-3",
               {
-                "bg-[var(--estado)] hover:bg-[var(--estado)] text-white": pathname === link.href,
+                "bg-[var(--card-dark)] hover:bg-[var(--card-dark)] text-white":
+                  pathname === link.href,
               }
             )}
           >
