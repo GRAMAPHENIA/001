@@ -17,10 +17,11 @@ export default function Home() {
         ></Image>
         CONCEPTO HEXAGONO
       </div>
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg text-white bg-[var(--card-dark)] px-6 py-10 md:w-2/5 md:px-20">
-         Change
+      <div className="mt-2 grid grid-cols-1 gap-4 md:grid md:grid-cols-4">
+        <div className="text-center rounded-lg text-white bg-[var(--card-dark)] px-4 py-2">
+         caja
         </div>
+        
       </div>
     </main>
   );
