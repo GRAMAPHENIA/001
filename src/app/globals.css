@@ -7,21 +7,18 @@
   --light: #dee8f1;
   --button-dark: #2b3136;
   --button-light: #dee8f1;
-  --hover: #456779;
+  --hover: #2e576d;
   --estado: #1b2430;
   --card-dark: #0d1117;
   --card-light: #36393b;
-  --border-card-dark:#3c4042;
+  --border-card-dark: #3c4042;
 }
 
 html,
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-
   background: var(--dark);
-  color: var(--dark);
+  padding-top: 20px;
+}
+header {
+  top: 0;
 }
