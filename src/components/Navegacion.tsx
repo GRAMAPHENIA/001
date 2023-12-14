@@ -24,14 +24,14 @@ export default function Navegacion() {
             key={link.name}
             href={link.href}
             className={clsx(
-              "flex items-center text-center justify-center mb-2 rounded-full px-4 py-2 text-sm font-medium hover:bg-[var(--estado)] hover:text-slate-400 md:flex-none md:justify-start md:p-2 md:px-3",
+              "flex items-center text-center justify-center rounded-full  py-2 px-4 text-lg font-medium hover:bg-[var(--estado)] hover:text-slate-400 md:flex-none md:justify-start md:py-2 md:px-4 m-4 border-2 border-[var(--card-dark)]",
               {
-                "bg-[var(--hover)] hover:bg-[var(--hover)] text-white rounded-full":
+                "bg-[var(--hover)] hover:bg-[var(--hover)] text-white rounded-full border-2 border-[var(--dark)]":
                   pathname === link.href,
               }
             )}
           >
-            <p className="text-center text-white">{link.name}</p>
+            <p className="text-center text-white shadow-slate-400">{link.name}</p>
           </Link>
         );
       })}

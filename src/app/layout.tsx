@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "CONCEPTO",
-  description: "Generada por Red & Bird",
+  description: "Generada por RedFang & BirdieOnBoard",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.className} antialiased`}>
-        <header className="flex bg-[#0d1117] flex-row gap-2 p-6 mt-0 fixed z-[999] w-full justify-end">
+        <header className="navegacion flex bg-[var(--card-dark)] fixed z-[999] justify-end">
           <Navegacion />
         </header>
         {children}
