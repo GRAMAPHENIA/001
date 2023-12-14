@@ -4,6 +4,8 @@ import "./globals.css";
 
 import Navegacion from "@/components/Navegacion.tsx";
 
+import Image from "next/image";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,8 +21,19 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.className} antialiased`}>
-        <header className="navegacion flex bg-[var(--card-dark)] fixed z-[999] justify-end">
-          <Navegacion />
+        <header className="navegacion flex bg-[var(--card-dark)] fixed z-[999] justify-between items-center px-4 py-6">
+          <div className="  h-w-11 w-11 rounded-full border-2 border-[#213f4e]">
+            <Image
+              className="p-2 justify-center align-middle"
+              src="/iconos/logo.svg"
+              width={50}
+              height={50}
+              alt="Picture of the author"
+            ></Image>
+          </div>
+          <div className="flex">
+            <Navegacion />
+          </div>
         </header>
         {children}
       </body>
