@@ -21,8 +21,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.className} antialiased`}>
-        <header className="navegacion flex bg-[var(--card-dark)] fixed z-[999] justify-between items-center px-4 py-6">
-          <div className="  h-w-11 w-11 rounded-full border-2 border-[#213f4e]">
+        <header className="navegacion justify-between items-center px-4 py-6">
+          <div className="h-11 w-11 rounded-full border-2 border-[#213f4e]">
             <Image
               className="p-2 justify-center align-middle"
               src="/iconos/logo.svg"
