@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
-      <h1 className="text-[var(--light)]">Contactos</h1>
+      <h1 className="text-white">Contactos</h1>
     </div>
   );
 };

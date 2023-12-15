@@ -1,14 +1,14 @@
-import { Metadata } from 'next'
-import Link from "next/link"
+import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata = {
-    title: 'CONSULTAS',
-  }
+  title: "CONSULTAS",
+};
 
 export default function Consultas() {
   return (
     <>
-      <h1>Consultas</h1>
+      <h1 className="text-white">Consultas</h1>
     </>
   );
 }
