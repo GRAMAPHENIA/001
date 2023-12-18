@@ -28,11 +28,20 @@ export default function RootLayout({
               src="/iconos/logo.svg"
               width={50}
               height={50}
-              alt="Picture of the author"
+              alt="Logo de Hexagono"
             ></Image>
           </div>
-          <div className="flex">
+          <div className="hidden md:flex">
             <Navegacion />
+          </div>
+          <div className="md:hidden">
+            <h1 className="text-white"><Image
+              className="p-2 justify-center align-middle"
+              src="/iconos/hexagono.svg"
+              width={50}
+              height={50}
+              alt="Logo de Hexagono"
+            ></Image></h1>
           </div>
         </header>
         {children}
