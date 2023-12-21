@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Navegacion from "@/components/Navegacion.tsx";
+import Modal from "@/components/Modal.tsx";
 
 import Image from "next/image";
 
@@ -10,7 +11,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "CONCEPTO HEXAGONO",
-  description: "Sitio dedicado a la creación de páginas web, generado por RedFang & BirdieOnBoard.",
+  description:
+    "Sitio dedicado a la creación de páginas web, generado por RedFang & BirdieOnBoard.",
 };
 
 export default function RootLayout({
@@ -35,15 +37,7 @@ export default function RootLayout({
             <Navegacion />
           </div>
           <div className="md:hidden">
-            <h1 className="text-white">
-              <Image
-                className="p-2 justify-center align-middle"
-                src="/iconos/hexagono.svg"
-                width={50}
-                height={50}
-                alt="Logo de Hexagono"
-              ></Image>
-            </h1>
+            <Modal />
           </div>
         </header>
         {children}
