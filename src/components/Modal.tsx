@@ -51,26 +51,31 @@ const Modal = () => {
         />
       </button>
       <dialog
-        className="fixed justify-center items-center rounded-3xl top-2 left-1/2 transform -translate-x-1/2 translate-y-1/2 mt-6 bg-[var(--estado)] p-10 text-white"
+        className="fixed w-full h-screen justify-center items-center bg-[var(--estado)] py-14 px-20 border border-[var(--card-light)]"
         id="miModal"
         open={modalOpen}
       >
         <form className="flex flex-col text-center p-4" method="dialog">
           <nav>
             <ol className="space-y-4">
-              <p className="text-6xl mb-4 p-4">⌨</p>
-              <li className="bg-amber-300/90 py-2 px-4 rounded-full">
-                <Link href="/" onClick={closeModal}>
+              <p className="text-6xl mb-4 p-4 text-white">⌨</p>
+              <li >
+                <Link className="bg-amber-200 hover:bg-amber-100 cursor-pointer font-semibold py-2 px-4 rounded-full text-[var(--card-light)]" href="/" onClick={closeModal}>
                   Inicio
                 </Link>
               </li>
-              <li className="bg-amber-300/90 py-2 px-4 rounded-full">
-                <Link href="/contactos" onClick={closeModal}>
+              <li >
+                <Link className="bg-amber-200 hover:bg-amber-100 cursor-pointer font-semibold py-2 px-4 rounded-full text-[var(--card-light)]" href="/portafolio" onClick={closeModal}>
+                  Portafolio
+                </Link>
+              </li>
+              <li >
+                <Link className="bg-amber-200 hover:bg-amber-100 cursor-pointer font-semibold py-2 px-4 rounded-full text-[var(--card-light)]" href="/contactos" onClick={closeModal}>
                   Contactos
                 </Link>
               </li>
-              <li className="bg-amber-300/90 py-2 px-4 rounded-full">
-                <Link href="/consultas" onClick={closeModal}>
+              <li >
+                <Link className="bg-amber-200 hover:bg-amber-100 cursor-pointer font-semibold py-2 px-4 rounded-full text-[var(--card-light)]" href="/consultas" onClick={closeModal}>
                   Consultas
                 </Link>
               </li>
