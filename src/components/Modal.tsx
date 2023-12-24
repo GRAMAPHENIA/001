@@ -55,7 +55,7 @@ const Modal = () => {
         id="miModal"
         open={modalOpen}
       >
-        <form className="flex flex-col text-center p-4 gap-4" method="dialog">
+        <form className="flex flex-col text-center p-4" method="dialog">
           
           <nav>
             <ol>
