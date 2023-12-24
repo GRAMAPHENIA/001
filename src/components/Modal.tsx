@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const Modal = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -54,7 +53,6 @@ const Modal = () => {
       <dialog
         className="rounded-3xl fixed top-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 mt-6"
         id="miModal"
-        // style={{ left: "auto" }}
         open={modalOpen}
       >
         <form className="flex flex-col text-center p-4 gap-4" method="dialog">
