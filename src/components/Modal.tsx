@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 
 const Modal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -60,19 +62,19 @@ const Modal = () => {
           <nav>
             <ol>
               <li>
-                <a href="/" onClick={closeModal}>
+                <Link href="/" onClick={closeModal}>
                   Inicio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contactos" onClick={closeModal}>
+                <Link href="/contactos" onClick={closeModal}>
                   Contactos
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/consultas" onClick={closeModal}>
+                <Link href="/consultas" onClick={closeModal}>
                   Consultas
-                </a>
+                </Link>
               </li>
             </ol>
           </nav>
