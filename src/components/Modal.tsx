@@ -51,25 +51,25 @@ const Modal = () => {
         />
       </button>
       <dialog
-        className="fixed justify-center items-center rounded-3xl top-2 left-1/2 transform -translate-x-1/2 translate-y-1/2 mt-6 bg-white p-10"
+        className="fixed justify-center items-center rounded-3xl top-2 left-1/2 transform -translate-x-1/2 translate-y-1/2 mt-6 bg-[var(--estado)] p-10 text-white"
         id="miModal"
         open={modalOpen}
       >
         <form className="flex flex-col text-center p-4" method="dialog">
-          
           <nav>
-            <ol>
-              <li>
+            <ol className="space-y-4">
+              <p className="text-6xl mb-4 p-4">⌨</p>
+              <li className="bg-amber-300/90 py-2 px-4 rounded-full">
                 <Link href="/" onClick={closeModal}>
                   Inicio
                 </Link>
               </li>
-              <li>
+              <li className="bg-amber-300/90 py-2 px-4 rounded-full">
                 <Link href="/contactos" onClick={closeModal}>
                   Contactos
                 </Link>
               </li>
-              <li>
+              <li className="bg-amber-300/90 py-2 px-4 rounded-full">
                 <Link href="/consultas" onClick={closeModal}>
                   Consultas
                 </Link>
