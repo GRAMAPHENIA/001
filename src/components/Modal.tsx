@@ -56,7 +56,7 @@ const Modal = () => {
         open={modalOpen}
       >
         <form className="flex flex-col text-center p-4 gap-4" method="dialog">
-          <h1>Navegacion</h1>
+          
           <nav>
             <ol>
               <li>
@@ -76,8 +76,6 @@ const Modal = () => {
               </li>
             </ol>
           </nav>
-
-          <button onClick={closeModal}>Cerrar</button>
         </form>
       </dialog>
     </>
