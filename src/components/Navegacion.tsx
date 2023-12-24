@@ -11,6 +11,7 @@ const links = [
     href: "/consultas",
   },
   { name: "Contactos", href: "/contactos" },
+  { name: "Portafolio", href: "/portafolio" },
 ];
 
 export default function Navegacion() {

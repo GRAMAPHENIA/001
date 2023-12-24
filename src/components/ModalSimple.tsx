@@ -1,17 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import clsx from "clsx";
-
-const links = [
-  { name: "Inicio", href: "/" },
-  { name: "Consultas", href: "/consultas" },
-  { name: "Contactos", href: "/contactos" },
-  { name: "Portafolio", href: "/portafolio" },
-];
 
 const Modal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -48,8 +39,6 @@ const Modal = () => {
     setModalOpen(false);
   };
 
-  const pathname = usePathname();
-
   return (
     <>
       <button onClick={openModal}>
@@ -70,27 +59,25 @@ const Modal = () => {
           <nav>
             <ol className="space-y-4">
               <p className="text-6xl mb-4 p-4 text-white">⌨</p>
-              <li>
-                {links.map((link) => (
-                  <Link key={link.name} href={link.href}>
-                    <div
-                      className={clsx(
-                        "flex items-center text-center justify-center rounded-full py-2 px-4 text-lg font-medium md:flex-none md:justify-start md:py-2 md:px-4 cursor-pointer",
-                        {
-                          "text-white hover:bg-amber-100 hover:border-[var(--light)] hover:text-[var(--card-light)]":
-                            pathname !== link.href,
-                          "bg-amber-200 border-2 border-[var(--light)] text-[var(--hover)] rounded-full":
-                            pathname === link.href,
-                        }
-                      )}
-                      onClick={() => {
-                        closeModal();
-                      }}
-                    >
-                      {link.name}
-                    </div>
-                  </Link>
-                ))}
+              <li >
+                <Link className="bg-amber-200 hover:bg-amber-100 cursor-pointer font-semibold py-2 px-4 rounded-full text-[var(--card-light)]" href="/" onClick={closeModal}>
+                  Inicio
+                </Link>
+              </li>
+              <li >
+                <Link className="bg-amber-200 hover:bg-amber-100 cursor-pointer font-semibold py-2 px-4 rounded-full text-[var(--card-light)]" href="/portafolio" onClick={closeModal}>
+                  Portafolio
+                </Link>
+              </li>
+              <li >
+                <Link className="bg-amber-200 hover:bg-amber-100 cursor-pointer font-semibold py-2 px-4 rounded-full text-[var(--card-light)]" href="/contactos" onClick={closeModal}>
+                  Contactos
+                </Link>
+              </li>
+              <li >
+                <Link className="bg-amber-200 hover:bg-amber-100 cursor-pointer font-semibold py-2 px-4 rounded-full text-[var(--card-light)]" href="/consultas" onClick={closeModal}>
+                  Consultas
+                </Link>
               </li>
             </ol>
           </nav>
