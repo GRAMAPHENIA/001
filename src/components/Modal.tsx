@@ -55,7 +55,7 @@ const Modal = () => {
       <button onClick={openModal}>
         <Image
           className="p-2 justify-center align-middle"
-          src="/iconos/hexagono.svg"
+          src="/iconos/menu.svg"
           width={50}
           height={50}
           alt="Icono de Hexagono con un mas dentro para destacar un modal que contiene la navegacion de la página"

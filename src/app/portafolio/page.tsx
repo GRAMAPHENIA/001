@@ -3,11 +3,11 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CONTACTOS",
-  description: "Seccion dedicada al",
+  title: "PORTAFOLIO",
+  description: "Seccion dedicada al Portafolio",
 };
 
-const page = () => {
+export default function Portafolio() {
   return (
     <>
       <div className="flex flex-col mx-2 md:mx-20">
@@ -83,6 +83,4 @@ const page = () => {
       </div>
     </>
   );
-};
-
-export default page;
+}

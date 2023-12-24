@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${inter.className} antialiased`}>
         <header className="navegacion justify-between items-center">
-          <div className="ml-2 h-11 w-11 rounded-full border-2 border-[#213f4e]">
+          <div className="">
             <Image
               className="p-2 justify-center align-middle"
               src="/iconos/logo.svg"
