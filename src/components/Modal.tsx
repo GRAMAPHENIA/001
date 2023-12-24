@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Modal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -33,9 +34,9 @@ const Modal = () => {
         ></Image>
       </button>
       <dialog id="miModal">
-        <form method="dialog">
+        <form className="flex flex-col" method="dialog">
           <h1>Navegacion</h1>
-
+          <Link href="/" onClick={closeModal}>Inicio</Link>
           <button onClick={closeModal}>Cerrar</button>
         </form>
       </dialog>
