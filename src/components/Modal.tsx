@@ -52,7 +52,7 @@ const Modal = () => {
         />
       </button>
       <dialog
-        className="rounded-3xl fixed top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-6"
+        className="rounded-3xl fixed top-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 mt-6"
         id="miModal"
         // style={{ left: "auto" }}
         open={modalOpen}
