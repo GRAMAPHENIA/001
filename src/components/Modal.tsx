@@ -51,7 +51,7 @@ const Modal = () => {
         />
       </button>
       <dialog
-        className="rounded-3xl fixed top-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 mt-6"
+        className="fixed justify-center items-center rounded-3xl top-2 left-1/2 transform -translate-x-1/2 translate-y-1/2 mt-6 bg-white p-10"
         id="miModal"
         open={modalOpen}
       >
