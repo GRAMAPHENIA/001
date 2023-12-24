@@ -2,16 +2,32 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const Modal = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    if (modalOpen) {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape" && modalOpen) {
+        closeModal();
+      }
+    };
+
+    const handleClickOutsideModal = (event) => {
       const modal = document.getElementById("miModal");
-      modal.showModal();
-    }
+
+      if (modalOpen && modal && !modal.contains(event.target)) {
+        closeModal();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("click", handleClickOutsideModal);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("click", handleClickOutsideModal);
+    };
   }, [modalOpen]);
 
   const openModal = () => {
@@ -23,24 +39,48 @@ const Modal = () => {
   };
 
   return (
-    <div>
+    <>
       <button onClick={openModal}>
         <Image
           className="p-2 justify-center align-middle"
           src="/iconos/hexagono.svg"
           width={50}
           height={50}
-          alt="Icono de Hexagono con un mas dentro para destacar un modal que contiene la navegacion de la ágina"
-        ></Image>
+          alt="Icono de Hexagono con un mas dentro para destacar un modal que contiene la navegacion de la página"
+        />
       </button>
-      <dialog id="miModal">
-        <form className="flex flex-col" method="dialog">
+      <dialog
+        className="rounded-3xl fixed top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-6"
+        id="miModal"
+        // style={{ left: "auto" }}
+        open={modalOpen}
+      >
+        <form className="flex flex-col text-center p-4 gap-4" method="dialog">
           <h1>Navegacion</h1>
-          <Link href="/" onClick={closeModal}>Inicio</Link>
+          <nav>
+            <ol>
+              <li>
+                <a href="/" onClick={closeModal}>
+                  Inicio
+                </a>
+              </li>
+              <li>
+                <a href="/contactos" onClick={closeModal}>
+                  Contactos
+                </a>
+              </li>
+              <li>
+                <a href="/consultas" onClick={closeModal}>
+                  Consultas
+                </a>
+              </li>
+            </ol>
+          </nav>
+
           <button onClick={closeModal}>Cerrar</button>
         </form>
       </dialog>
-    </div>
+    </>
   );
 };
 
