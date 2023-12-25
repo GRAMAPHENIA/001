@@ -27,7 +27,7 @@ export default function RootLayout({
           <div className="">
             <Image
               className="p-2 justify-center align-middle"
-              src="/iconos/logo.svg"
+              src="/iconos/logohexa.svg"
               width={50}
               height={50}
               alt="Logo de Hexagono"
