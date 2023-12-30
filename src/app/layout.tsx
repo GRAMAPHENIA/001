@@ -26,7 +26,7 @@ export default function RootLayout({
         <header className="navegacion justify-between items-center">
           <div className="">
             <Image
-              className="p-2 justify-center align-middle"
+              className="p-2 ml-2 justify-center align-middle"
               src="/iconos/logo-concepto.svg"
               width={80}
               height={80}
@@ -36,7 +36,7 @@ export default function RootLayout({
           <div className="hidden md:flex">
             <Navegacion />
           </div>
-          <div className="md:hidden">
+          <div className="md:hidden mr-2">
             <Modal />
           </div>
         </header>
