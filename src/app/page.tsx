@@ -15,13 +15,16 @@ export default function Home() {
             representa a tu empresa, diseñamos tu logo. Desarrollamos tu pagina
             web y te alojamos en nuestro servicio de hosting.
           </p>
-          <br />
+
           <small className="mt-6 text-center mx-auto text-slate-500">
             Ofrecemos creaciones digitales eficientes y creativas. Utilizamos
             tecnologías modernas y estrategias efectivas para impulsar tu
             negocio en linea.
           </small>
-          <button className="text-white mt-4 border border-[var(--estado)] rounded-full bg-[var(--card-dark)] hover:bg-[var(--border-card-dark)] py-2 ">Conocer</button>
+          <br />
+          <button className="text-white mt-4 border border-[var(--estado)] rounded-full bg-[var(--card-dark)] hover:bg-[var(--border-card-dark)] py-2 my-10">
+            Conocer
+          </button>
         </div>
 
         <div className="w-full  border border-[var(--estado)] rounded-xl p-4">
