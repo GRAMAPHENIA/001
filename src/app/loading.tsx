@@ -1,7 +1,9 @@
 export default function loading() {
   return (
     <>
-      <div>loading...</div>
+      <div className="text-white text-4xl flex justify-center align-middle p-20 ">
+        loading...
+      </div>
     </>
   );
 }

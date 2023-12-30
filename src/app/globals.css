@@ -13,7 +13,10 @@
   --estado: #1b2430;
   --card-dark: #1f252d;
   --card-light: #36393b;
-  --border-card-dark: #3c4042;
+  --border-card-dark: #32667d;
+  --gradient-start: #dcebf3;
+  --gradient-via: #9fd1dd;
+  --gradient-end: #1b323e;
 }
 html {
   overflow-y: scroll;

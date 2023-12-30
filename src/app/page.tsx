@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex flex-col md:mx-20 ">
       <section className="text-[var(--font-light)] grid grid-cols-1 md:grid-cols-2 mt-20 gap-4 mx-4">
         <div className="flex flex-col w-full  border border-[var(--estado)] rounded-xl p-4">
-          <h1 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center text-white">
+          <h1 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center bg-clip-text text-transparent bg-gradient-to-r from-[var(--gradient-start)] via-[var(--gradient-via)] to-[var(--gradient-end)]">
             Desarrollo web, diseño gráfico, modelado 3D
           </h1>
           <p className="mt-6 text-2xl text-center mx-auto text-slate-400">
@@ -22,7 +22,7 @@ export default function Home() {
             negocio en linea.
           </small>
           <br />
-          <button className="text-white mt-4 border border-[var(--estado)] rounded-full bg-[var(--card-dark)] hover:bg-[var(--border-card-dark)] py-2 my-10">
+          <button className="text-white mt-4 border border-[var(--estado)] rounded-full bg-[var(--card-dark)] hover:bg-[var(--button-dark)] py-2 my-10">
             Conocer
           </button>
         </div>
