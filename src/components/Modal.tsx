@@ -75,11 +75,11 @@ const Modal = () => {
                   <Link key={link.name} href={link.href}>
                     <div
                       className={clsx(
-                        "flex items-center text-center justify-center rounded-full py-2 px-4 text-lg font-medium md:flex-none md:justify-start md:py-2 md:px-4 cursor-pointer",
+                        "flex items-center text-center justify-center rounded-md my-2 py-2 px-4 text-lg font-medium md:flex-none md:justify-start md:py-2 md:px-4 cursor-pointer bg-slate-800",
                         {
-                          "text-white hover:bg-amber-100 hover:border-[var(--light)] hover:text-[var(--card-light)]":
+                          "text-slate-400 hover:bg-slate-700 hover:border-[var(--light)] hover:text-white/50":
                             pathname !== link.href,
-                          "bg-amber-200 border-2 border-[var(--light)] text-[var(--hover)] rounded-full":
+                          "border-2 border-slate-700 text-white":
                             pathname === link.href,
                         }
                       )}
