@@ -7,8 +7,8 @@ import clsx from "clsx";
 const links = [
   { name: "Inicio", href: "/" },
   {
-    name: "Consultas",
-    href: "/consultas",
+    name: "Servicios",
+    href: "/servicios",
   },
   { name: "Contactos", href: "/contactos" },
   { name: "Portafolio", href: "/portafolio" },
@@ -32,9 +32,7 @@ export default function Navegacion() {
               }
             )}
           >
-            <p className="text-center text-[var(--font-light)]">
-              {link.name}
-            </p>
+            <p className="text-center text-[var(--font-light)]">{link.name}</p>
           </Link>
         );
       })}
