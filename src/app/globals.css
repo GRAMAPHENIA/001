@@ -72,8 +72,8 @@ html {
   position: absolute;
   top: 4.5rem;
   right: .6rem;
-  width: 150px;
-  padding: 15px;
+  width: 200px;
+  padding: 30px;
   border-radius: 15px;
   background-color: var(--card-dark);
   border: 1px solid var(--border);
