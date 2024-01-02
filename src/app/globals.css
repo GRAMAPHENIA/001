@@ -70,9 +70,9 @@ html {
 
 .profile {
   position: absolute;
-  top: 5rem;
-  right: 1rem;
-  width: 120px;
+  top: 4.5rem;
+  right: .6rem;
+  width: 150px;
   padding: 15px;
   border-radius: 15px;
   background-color: var(--card-dark);
@@ -82,10 +82,10 @@ html {
 .profile::before {
   content: "";
   position: absolute;
-  top: -0.7rem;
+  top: -0.4rem;
   right: 2rem;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   transform: rotate(45deg);
   background-color: var(--card-dark);
   border-left: 1px solid var(--border);

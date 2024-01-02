@@ -14,7 +14,7 @@ const links = [
     href: "/servicios",
   },
   { name: "Portafolio", href: "/portafolio" },
-  { name: "Contactos", href: "/contactos" },
+  { name: "Productos", href: "/productos" },
 ];
 
 export default function Navegacion() {
@@ -47,7 +47,7 @@ export default function Navegacion() {
             className="bg-white px-4 py-2 rounded-full mx-2"
             onClick={() => setAbrirProductos((prev) => !prev)}
           >
-            Productos
+            Contactos
           </button>
           {abrirProductos && <Productos />}
         </div>
