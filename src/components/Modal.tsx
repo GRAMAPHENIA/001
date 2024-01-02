@@ -9,7 +9,6 @@ import clsx from "clsx";
 const links = [
   { name: "Inicio", href: "/" },
   { name: "Servicios", href: "/servicios" },
-  { name: "Productos", href: "/productos" },
   { name: "Portafolio", href: "/portafolio" },
 ];
 

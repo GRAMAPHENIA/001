@@ -11,8 +11,8 @@ export default function Home() {
           </h1>
           <p className="mt-6 text-2xl text-center mx-auto text-[var(--font-light)]">
             <br />
-            Creamos marcas y elaboramos la identidad que representa a tu
-            empresa. Diseñamos tu logo. Desarrollamos paginas web y te alojamos
+            Creamos marcas y elaboramos la identidad para tu
+            empresa. Diseñamos logos. Desarrollamos paginas web y te alojamos
             en el servicio de hosting de tu preferencia.
           </p>
 

@@ -14,7 +14,7 @@ const Productos = () => {
           <Link href="/">
             <li className="flex group items-center mx-0 hover:text-[var(--gradient-via)]">
               <Image
-                className="mr-4 group-hover:bg-[var(--border-card-dark)] group-hover:border-[var(--gradient-via)] border border-slate-700 p-1 rounded-full"
+                className="mr-4 group-hover:bg-[var(--button-dark)] group-hover:border-[var(--gradient-via)] border border-slate-700 p-1 rounded-full"
                 src="/iconos/facebook.svg"
                 width={38}
                 height={38}
@@ -26,7 +26,7 @@ const Productos = () => {
           <Link href="/">
             <li className="flex group items-center mx-0 hover:text-[var(--gradient-via)]">
               <Image
-                className="mr-4 group-hover:bg-[var(--border-card-dark)] group-hover:border-[var(--gradient-via)] border border-slate-700 p-1 rounded-full"
+                className="mr-4 group-hover:bg-[var(--button-dark)] group-hover:border-[var(--gradient-via)] border border-slate-700 p-1 rounded-full"
                 src="/iconos/instagram.svg"
                 width={38}
                 height={38}
@@ -38,7 +38,7 @@ const Productos = () => {
           <Link href="/">
             <li className="flex group items-center mx-0 hover:text-[var(--gradient-via)]">
               <Image
-                className="mr-4 group-hover:bg-[var(--border-card-dark)] group-hover:border-[var(--gradient-via)] border border-slate-700 p-1 rounded-full"
+                className="mr-4 group-hover:bg-[var(--button-dark)] group-hover:border-[var(--gradient-via)] border border-slate-700 p-1 rounded-full"
                 src="/iconos/email.svg"
                 width={36}
                 height={36}
@@ -50,7 +50,7 @@ const Productos = () => {
           <Link href="/">
             <li className="flex group items-center mx-0 hover:text-[var(--gradient-via)]">
               <Image
-                className="mr-4 group-hover:bg-[var(--border-card-dark)] group-hover:border-[var(--gradient-via)] border border-slate-700 p-1 rounded-full"
+                className="mr-4 group-hover:bg-[var(--button-dark)] group-hover:border-[var(--gradient-via)] border border-slate-700 p-1 rounded-full"
                 src="/iconos/whatsapp.svg"
                 width={36}
                 height={36}

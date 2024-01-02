@@ -14,7 +14,6 @@ const links = [
     href: "/servicios",
   },
   { name: "Portafolio", href: "/portafolio" },
-  { name: "Productos", href: "/productos" },
 ];
 
 export default function Navegacion() {
