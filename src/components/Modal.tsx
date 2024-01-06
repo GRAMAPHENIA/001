@@ -9,6 +9,7 @@ import clsx from "clsx";
 const links = [
   { name: "Inicio", href: "/" },
   { name: "Servicios", href: "/servicios" },
+  { name: "Productos", href: "/productos" },
   { name: "Portafolio", href: "/portafolio" },
 ];
 
@@ -68,7 +69,19 @@ const Modal = () => {
         <form className="flex flex-col text-center p-4" method="dialog">
           <nav>
             <ol className="space-y-4">
-              <p className="text-6xl mb-4 p-4 text-white">⌨</p>
+              <div className="flex justify-center my-20">
+                <Image
+                  className="justify-center align-middle"
+                  src="/logo-hexagono-gradient.svg"
+                  width={60}
+                  height={60}
+                  alt="Logo de Hexagono"
+                  style={{
+                    filter: "drop-shadow(0px 0px 4px  rgba(13, 25, 40, 1))",
+                  }}
+                ></Image>
+              </div>
+
               <li>
                 {links.map((link) => (
                   <Link key={link.name} href={link.href}>

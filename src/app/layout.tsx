@@ -24,13 +24,16 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${inter.className} antialiased`}>
         <header className="navegacion justify-between items-center">
-          <div className="">
+          <div className="flex gap-2 items-center">
             <Image
               className="p-2 ml-2 justify-center align-middle"
-              src="/iconos/logo-concepto.svg"
-              width={80}
-              height={80}
+              src="/logo-hexagono-gradient.svg"
+              width={50}
+              height={50}
               alt="Logo de Hexagono"
+              style={{
+                filter: "drop-shadow(0px 0px 4px  rgba(13, 25, 40, 1))",
+              }}
             ></Image>
           </div>
           <div className="hidden md:flex">
