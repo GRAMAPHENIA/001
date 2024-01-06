@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import clsx from "clsx";
 
-import Productos from "@/components/Productos.tsx";
+import Productos from "@/components/Productos";
 
 const links = [
   { name: "Inicio", href: "/" },
