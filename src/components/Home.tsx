@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-
 export default function Home() {
+  console.log("Componente Home renderizado");
+ 
   return (
     <>
       <figure className="flex flex-col md:mx-20">
