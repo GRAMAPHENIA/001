@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Navegacion from "@/components/Navegacion.tsx";
-import Modal from "@/components/Modal.tsx";
+import Navegacion from "@/components/Navegacion";
+import Modal from "@/components/Modal";
 
 import Image from "next/image";
 
