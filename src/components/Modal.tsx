@@ -66,10 +66,13 @@ const Modal: FC = () => {
 
     // Remueve event listeners al desmontar
     return () => {
-      document.removeEventListener("keydown", handleKeyDown as EventListener);
+      document.removeEventListener(
+        "keydown",
+        handleKeyDown as unknown as EventListener
+      );
       document.removeEventListener(
         "click",
-        handleClickOutsideModal as EventListener
+        handleClickOutsideModal as unknown as EventListener
       );
     };
   }, [modalOpen]);
