@@ -1,7 +1,13 @@
-"use client"
+"use client";
 
 // Importa React y los tipos necesarios
-import React, { useState, useEffect, MouseEvent, KeyboardEvent, FC } from "react";
+import React, {
+  useState,
+  useEffect,
+  MouseEvent,
+  KeyboardEvent,
+  FC,
+} from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -38,19 +44,33 @@ const Modal: FC = () => {
     const handleClickOutsideModal = (event: MouseEvent) => {
       const modal = document.getElementById("miModal");
 
-      if (modalOpen && modal && !(event.target instanceof Node) && !modal.contains(event.target as Node)) {
+      if (
+        modalOpen &&
+        modal &&
+        !(event.target instanceof Node) &&
+        !modal.contains(event.target as Node)
+      ) {
         closeModal();
       }
     };
 
     // Agrega event listeners
-    document.addEventListener("keydown", handleKeyDown as EventListener);
-    document.addEventListener("click", handleClickOutsideModal as EventListener);
+    document.addEventListener(
+      "keydown",
+      handleKeyDown as unknown as EventListener
+    );
+    document.addEventListener(
+      "click",
+      handleClickOutsideModal as unknown as EventListener
+    );
 
     // Remueve event listeners al desmontar
     return () => {
       document.removeEventListener("keydown", handleKeyDown as EventListener);
-      document.removeEventListener("click", handleClickOutsideModal as EventListener);
+      document.removeEventListener(
+        "click",
+        handleClickOutsideModal as EventListener
+      );
     };
   }, [modalOpen]);
 
