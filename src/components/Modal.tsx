@@ -17,7 +17,7 @@ const Modal = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    const handleKeyDown = (event) => {
+    const handleKeyDown = (event: React.KeyboardEvent) => {
       if (event.key === "Escape" && modalOpen) {
         closeModal();
       }
