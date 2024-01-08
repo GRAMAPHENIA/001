@@ -26,7 +26,7 @@ const Modal = () => {
     const handleClickOutsideModal = (event: React.MouseEvent) => {
       const modal = document.getElementById("miModal");
     
-      if (modalOpen && modal && !(event.target instanceof Node) && !modal.contains(event.target)) {
+      if (modalOpen && modal && !(event.target instanceof Node) && !modal.contains(event.target as Node)) {
         closeModal();
       }
     };
