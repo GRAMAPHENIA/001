@@ -1,43 +1,56 @@
-"use client";
+"use client"
 
-import React, { useState, useEffect } from "react";
+// Importa React y los tipos necesarios
+import React, { useState, useEffect, MouseEvent, KeyboardEvent, FC } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 
-const links = [
+// Define el tipo para el array de enlaces
+interface LinkItem {
+  name: string;
+  href: string;
+}
+
+// Define los enlaces
+const links: LinkItem[] = [
   { name: "Inicio", href: "/" },
   { name: "Servicios", href: "/servicios" },
   { name: "Productos", href: "/productos" },
   { name: "Portafolio", href: "/portafolio" },
 ];
 
-const Modal = () => {
+// Define el componente Modal
+const Modal: FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
-    const handleKeyDown = (event: React.KeyboardEvent) => {
+    // Manejador para el evento de teclado
+    const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape" && modalOpen) {
         closeModal();
       }
     };
 
-    const handleClickOutsideModal = (event: React.MouseEvent) => {
+    // Manejador para el evento de clic fuera del modal
+    const handleClickOutsideModal = (event: MouseEvent) => {
       const modal = document.getElementById("miModal");
-    
+
       if (modalOpen && modal && !(event.target instanceof Node) && !modal.contains(event.target as Node)) {
         closeModal();
       }
     };
-    
 
-    document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("click", handleClickOutsideModal);
+    // Agrega event listeners
+    document.addEventListener("keydown", handleKeyDown as EventListener);
+    document.addEventListener("click", handleClickOutsideModal as EventListener);
 
+    // Remueve event listeners al desmontar
     return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("click", handleClickOutsideModal);
+      document.removeEventListener("keydown", handleKeyDown as EventListener);
+      document.removeEventListener("click", handleClickOutsideModal as EventListener);
     };
   }, [modalOpen]);
 
@@ -48,8 +61,6 @@ const Modal = () => {
   const closeModal = () => {
     setModalOpen(false);
   };
-
-  const pathname = usePathname();
 
   return (
     <>
