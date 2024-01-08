@@ -23,7 +23,7 @@ const Modal = () => {
       }
     };
 
-    const handleClickOutsideModal = (event) => {
+    const handleClickOutsideModal = (event: React.KeyboardEvent) => {
       const modal = document.getElementById("miModal");
 
       if (modalOpen && modal && !modal.contains(event.target)) {
