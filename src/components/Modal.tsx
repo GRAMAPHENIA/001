@@ -23,13 +23,14 @@ const Modal = () => {
       }
     };
 
-    const handleClickOutsideModal = (event: React.KeyboardEvent) => {
+    const handleClickOutsideModal = (event: React.MouseEvent) => {
       const modal = document.getElementById("miModal");
-
-      if (modalOpen && modal && !modal.contains(event.target)) {
+    
+      if (modalOpen && modal && !(event.target instanceof Node) && !modal.contains(event.target)) {
         closeModal();
       }
     };
+    
 
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("click", handleClickOutsideModal);
